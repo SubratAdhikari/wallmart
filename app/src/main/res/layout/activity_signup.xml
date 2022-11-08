@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#BBBBBB"
+    android:orientation="vertical"
+    tools:context=".Signup">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_arrow_login"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="50dp"
+            android:onClick="back_arrow_login"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registor Page"
+            android:fontFamily="@font/tirobangla_italic"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#2B2B2B"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Join Us and"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Build Your Relationship with other !!! "
+            android:textSize="22sp"/>
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Name"
+            android:padding="15dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/et_custom"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Email"
+            android:padding="15dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/et_custom"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Password"
+            android:padding="15dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/et_custom"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/et_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Re-Password"
+            android:padding="15dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/et_custom"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_password"
+            android:background="@drawable/btn_custom"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="Register "/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Register so please "
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login  "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#0C3DEF"
+                android:onClick="Login_Now"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
